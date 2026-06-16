@@ -9,19 +9,19 @@ echo "==============================="
 find $LOG_DIR -name "*.log" -mtime -1
 
 echo -e "\nApplication Log Analysis:"
-grep "ERROR" $LOG_DIR/$APP_LOG_FILE
+grep "ERROR" "$LOG_DIR/$APP_LOG_FILE"
 
 echo -e "\nNumber of Errors logs in application.log:"
-grep -c "ERROR" $LOG_DIR/$APP_LOG_FILE
+grep -c "ERROR" "$LOG_DIR/$APP_LOG_FILE"
 
 echo -e "\nNumber of Fatal Errors in application.log:"
-grep -c "FATAL" $LOG_DIR/$APP_LOG_FILE
+grep -c "FATAL" "$LOG_DIR/$APP_LOG_FILE"
 
 echo -e "\nNumber of Errors logs in system.log:"
-grep -c "ERROR" $LOG_DIR/$SYS_LOG_FILE
+grep -c "ERROR" "$LOG_DIR/$SYS_LOG_FILE"
 
 echo -e "\nNumber of Fatal Errors in system.log:"
-grep -c "FATAL" $LOG_DIR/$SYS_LOG_FILE
+grep -c "FATAL" "$LOG_DIR/$SYS_LOG_FILE"
 
 echo -e "\nSystem Log Analysis:"
-grep "ERROR" $LOG_DIR/$SYS_LOG_FILE
+grep "ERROR" "$LOG_DIR/$SYS_LOG_FILE"
