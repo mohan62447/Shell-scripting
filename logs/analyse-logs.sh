@@ -1,3 +1,4 @@
+#!/bin/bash
 find . -name "*.log" -mtime -1
 
 grep "ERROR" application.log
