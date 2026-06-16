@@ -12,7 +12,7 @@ LOG_FILES=$(find $LOG_DIR -name "*.log" -mtime -1)
 echo "$LOG_FILES"
 
 for LOG_FILE in $LOG_FILES; do
-  for PATTERN in $ERROR_PATTERNS; do
+  for PATTERN in ${ERROR_PATTERNS[@]}; do
 
 echo -e "\nsearching $PATTERN logs in $LOG_FILE file"
 grep $PATTERN "$LOG_FILE"
