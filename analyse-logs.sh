@@ -1,6 +1,6 @@
 #!/bin/bash
 
-LOG_DIR="~/OneDrive/desktop/DevOps_Lab/Shell-scripting/logs"
+LOG_DIR="/c:/Users/Asus/OneDrive/desktop/DevOps_Lab/Shell-scripting/logs"
 APP_LOG_FILE="application.log"
 SYS_LOG_FILE="system.log"
 
