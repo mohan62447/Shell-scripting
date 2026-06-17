@@ -1,5 +1,10 @@
 #!/bin/bash 
 
+# We need to install Prometheus software on our system, 
+# but first we need to check whether the file already exists on our system.
+# If it already exists, we should not download it again; instead, we can use the existing file 
+# for the installation.
+
 echo "Downloading the promethueus binary file from the official website"
 if [ -e /home/ubuntu/Shell-scripting/prometheus-3.6.0.linux-amd64.tar.gz ]; then
     echo "Prometheus binary file already exists. Skipping download."
