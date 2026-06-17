@@ -7,9 +7,9 @@
 #   before.
 
 echo "Deleting log files which are modified within the last 30 days"
-PATH=$1
-echo "$PATH"
-find $PATH -name "*.log" -mtime -30 -delete
+LOG_PATH=$1
+echo "$LOG_PATH"
+find $LOG_PATH -name "*.log" -mtime -30 -delete
 #echo "Log files deleted successfully which are modified within the last 30 days"
 if [ $? -eq 0 ]; then
     echo "Log files deleted successfully which are modified within the last 30 days"
