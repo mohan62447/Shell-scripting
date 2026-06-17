@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "check disk usage in my system"
-disk_size=$(df -h | grep "C/Program Files/Git" | awk '{print $5}' | cut -d'%' -f1)
+disk_size=$(df -h | grep "C/Program Files/Git" | awk '{print $6}' | cut -d'%' -f1)
 echo "$disk_size% disk usage is above the threshold of 80%"
 if [ "$disk_size" -gt 80 ]; then
     echo "Disk usage is above the threshold. Please take necessary actions."
