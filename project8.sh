@@ -15,7 +15,7 @@ for software in "$@"; do
         echo "$software is already installed."
     else
         echo "$software is not installed. Installing..."
-        apt update && apt install -y $software
+        apt-get update && apt-get install -y $software
         if [ $? -eq 0 ]; then
             echo "$software installed successfully."
         else
