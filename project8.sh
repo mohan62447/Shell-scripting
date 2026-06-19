@@ -11,7 +11,7 @@ if [ $(id -u) -ne 0 ]; then
 fi
 
 for software in "$@"; do
-    if which $software &>/dev/null  then
+    if which $software &>/dev/null;  then
         echo "$software is already installed."
     else
         echo "$software is not installed. Installing..."
