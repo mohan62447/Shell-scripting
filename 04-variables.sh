@@ -8,4 +8,4 @@ read -s PIN
 
 echo "$firstName"
 echo "$Lastname"
-echo "your pin number is $PIN"
+echo "Password received"
