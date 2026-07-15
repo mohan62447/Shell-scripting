@@ -44,7 +44,7 @@ echo -e "${G}MySQL is already installed.${N}" &>> $LOG_FILE
 fi  
 
 dnf list installed httpd &>> $LOG_FILE
-if [$? -ne 0 ]
+if [ $? -ne 0 ]
 then
 echo -e "${Y}Apache is not installed. Installing now...${N}" &>> $LOG_FILE
 dnf install httpd -y &>> $LOG_FILE
