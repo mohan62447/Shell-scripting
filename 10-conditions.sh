@@ -1,14 +1,29 @@
 #!/bin/bash
 
-NUMBER=$1
-Number=$2
 
-if [ $NUMBER -gt 10 ]
+NUMBER1=$1
+NUMBER2=$2
+
+echo "Checking first number..."
+
+if [ $NUMBER1 -gt 10 ]
 then
-    echo "The number is positive"
-elif [ $NUMBER -lt 10 ]
+    echo "$NUMBER1 is greater than 10"
+elif [ $NUMBER1 -lt 10 ]
 then
-    echo "The number is negative"
+    echo "$NUMBER1 is less than 10"
 else
-    echo "The number is ten"
+    echo "$NUMBER1 is equal to 10"
+fi
+
+echo "Checking second number..."
+
+if [ $NUMBER2 -gt 10 ]
+then
+    echo "$NUMBER2 is greater than 10"
+elif [ $NUMBER2 -lt 10 ]
+then
+    echo "$NUMBER2 is less than 10"
+else
+    echo "$NUMBER2 is equal to 10"
 fi
