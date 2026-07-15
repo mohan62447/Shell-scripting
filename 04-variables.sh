@@ -2,6 +2,9 @@
 
 echo "please enter your pin number"
 
-read PIN
+read firstName Lastname #It will display when we enter the pin on diaplay, if we dont want dispaly what we enter we can use -s
+read -s PIN
 
-echo "ypu pin number is $PIN"
+echo "$firstName"
+echo "$Lastname"
+echo "your pin number is $PIN"
