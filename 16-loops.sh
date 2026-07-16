@@ -34,7 +34,7 @@ VALIDATE(){
     fi
 }
 
-for package in $@
+for package in $@ #Here we need to pass the package names as arguments while executing the script. For example: ./script.sh mysql-server httpd nginx
 do
     dnf list installed $package &>> $LOG_FILE
     if [ $? -ne 0 ]
